@@ -1,0 +1,28 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+current                                                           0x0160       4
+lcd_buffer                                                        0x0164      33
+lcd_buffer2                                                       0x0185      33
+vinput                                                            0x01A6       4
+arus1                                                             0x01AA       4
+vout1                                                             0x01AE       4
+sinyal                                                            0x01B2       4
+_base_y                                                           0x01B6       4
+_lcd_x                                                            0x01BA       1
+_lcd_y                                                            0x01BB       1
+_lcd_maxx                                                         0x01BC       1
+_seed                                                             0x01BD       4
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+dataadc                                                           R4,R5        2
+adc1                                                              R6,R7        2
+count                                                             R8,R9        2
+dataMin                                                           R10,R11      2
+dataMax                                                           R12,R13      2
