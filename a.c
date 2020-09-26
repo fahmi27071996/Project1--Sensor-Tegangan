@@ -249,7 +249,7 @@ for ( count = 0; count <= 1000; count++){
     vout1 = dataMax*(5.0/1023);
       //arus1 = fabs(vout1-2.50)/0.066;
       arus1 = fabs(vout1-2.50)/0.066;
-      arus1 = arus1/3;
+      arus1 = arus1/2;
       current = arus1;
       if(current>10){
       current = 0;}
@@ -257,7 +257,7 @@ for ( count = 0; count <= 1000; count++){
      // adc1 = read_adc(1);
 printf("{\"voltage\":%0.1f, \"current\":%0.01f, \"sinyal\":%0.1f}\r\n",vinput,current,sinyal);
 sprintf(lcd_buffer,"%0.1f %0.1f %0.1f\n", vinput,current,sinyal);
-sprintf(lcd_buffer2," V    Ir     S");
+sprintf(lcd_buffer2," V    I     S");
 lcd_gotoxy(0,0);
 lcd_puts(lcd_buffer2);
 lcd_gotoxy(0,1);
