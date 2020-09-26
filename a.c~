@@ -50,6 +50,7 @@ float voltage = 5.0;
 float current = 4.0;
 
 char lcd_buffer[33];
+char lcd_buffer2[33];
 float vinput;
 int dataadc;
 
@@ -218,10 +219,10 @@ while(1){
  
  // vcc = 5v ; adc 10 bit = 1024 desimal  
  //sprintf(lcd_buffer,"Volt :%0.0001f V",vinput);
-lcd_gotoxy(0,0);
+
 
 //sprintf(lcd_buffer,"Current :%0.0001f A",current);
-sprintf(lcd_buffer," V    I     S");
+
 
 // printf("%0.1f %0.1f %0.1f %0.1f\r\n", vinput,current,a,b);
 //printf("%0.0002f",dataadc);
@@ -240,6 +241,9 @@ sinyal =100;
       current = 0;}
 printf("{\"voltage\":%0.1f, \"current\":%0.1f, \"sinyal\":%0.1f}\r\n",vinput,current,sinyal);
 sprintf(lcd_buffer,"%0.1f %0.1f %0.1f\n", vinput,current,sinyal);
+sprintf(lcd_buffer2," V    I     S");
+lcd_gotoxy(0,0);
+lcd_puts(lcd_buffer2);
 lcd_gotoxy(0,1);
 lcd_puts(lcd_buffer);
 delay_ms(5000);

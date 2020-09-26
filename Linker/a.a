@@ -491,7 +491,7 @@
 ;PCODE: $000000E3 VOL: 0
 ;PCODE: $000000E4 VOL: 0
 ;PCODE: $000000E5 VOL: 0
-; 0000 00F4 sprintf(lcd_buffer2," V    I     S");
+; 0000 00F4 sprintf(lcd_buffer2," V    Ir     S");
 ;PCODE: $000000E6 VOL: 0
 ;PCODE: $000000E7 VOL: 0
 ;PCODE: $000000E8 VOL: 0

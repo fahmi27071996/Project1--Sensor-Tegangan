@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.30  D:\Project\CV AVR\pcb\List\a.asm Sat Sep 26 00:06:59 2020
+AVRASM ver. 2.1.30  D:\Project\CV AVR\pcb\List\a.asm Sat Sep 26 00:16:20 2020
 
 D:\Project\CV AVR\pcb\List\a.asm(1072): warning: Register r4 already defined by the .DEF directive
 D:\Project\CV AVR\pcb\List\a.asm(1073): warning: Register r6 already defined by the .DEF directive
@@ -1200,11 +1200,10 @@ D:\Project\CV AVR\pcb\List\a.asm(1076): warning: Register r12 already defined by
 00007b 2056
 00007c 2020
 00007d 4920      	.DB  0x0,0x20,0x56,0x20,0x20,0x20,0x20,0x49
-00007e 2020
+00007e 2072
 00007f 2020
-000080 5320
-D:\Project\CV AVR\pcb\List\a.asm(1132): warning: .cseg .db misalignment - padding zero byte
-000081 0000      	.DB  0x20,0x20,0x20,0x20,0x20,0x53,0x0
+000080 2020
+000081 0053      	.DB  0x72,0x20,0x20,0x20,0x20,0x20,0x53,0x0
                  _0x2000003:
 000082 c080      	.DB  0x80,0xC0
                  _0x2020000:
@@ -1802,7 +1801,7 @@ D:\Project\CV AVR\pcb\List\a.asm(1141): warning: .cseg .db misalignment - paddin
 0001bb 940e 0783 	CALL SUBOPT_0x6
 0001bd 940e 05ce 	CALL _sprintf
 0001bf 9660      	ADIW R28,16
-                 ; 0000 00F4 sprintf(lcd_buffer2," V    I     S");
+                 ; 0000 00F4 sprintf(lcd_buffer2," V    Ir     S");
 0001c0 e8e5      	LDI  R30,LOW(_lcd_buffer2)
 0001c1 e0f1      	LDI  R31,HIGH(_lcd_buffer2)
 0001c2 93fa      	ST   -Y,R31
@@ -4757,4 +4756,4 @@ Segment   Begin    End      Code   Data   Used    Size   Use%
 [.dseg] 0x000060 0x0001c1      0     97     97    1119   8.7%
 [.eseg] 0x000000 0x000000      0      0      0     512   0.0%
 
-Assembly complete, 0 errors, 9 warnings
+Assembly complete, 0 errors, 8 warnings

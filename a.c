@@ -241,7 +241,7 @@ sinyal =100;
       current = 0;}
 printf("{\"voltage\":%0.1f, \"current\":%0.1f, \"sinyal\":%0.1f}\r\n",vinput,current,sinyal);
 sprintf(lcd_buffer,"%0.1f %0.1f %0.1f\n", vinput,current,sinyal);
-sprintf(lcd_buffer2," V    I     S");
+sprintf(lcd_buffer2," V    Ir     S");
 lcd_gotoxy(0,0);
 lcd_puts(lcd_buffer2);
 lcd_gotoxy(0,1);
